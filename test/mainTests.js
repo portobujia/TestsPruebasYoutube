@@ -6,6 +6,7 @@ const main = require('../main');
 const helloWorlText = main.helloWorld();
 const substractionResult = main.substraction(4, 2);
 const arrayOfNumbers = main.arrayOfNumbers();
+const cups = 2;
 
 describe('Main Suite', function () {
     describe("Hello World Method - Test Cases", function () {
@@ -33,6 +34,11 @@ describe('Main Suite', function () {
     describe("Array method - Test Cases", function () {
         it('Array includes de number 5', function () {
             assert.include(arrayOfNumbers, 5);
+        })
+    })
+    describe("Cups - Test Cases", function () {
+        it('how many cups', function () {
+            assert.isNumber(cups, 'how many cups');
         })
     })
 
